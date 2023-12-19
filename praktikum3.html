@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java script</title>
+    <script>
+        function kalkulator(){
+            let bil4 = parseInt(document.getElementById("bil1").value);
+            let bil3 = parseInt(document.getElementById("bil2").value);
+
+            let penjumlahan = bil4 + bil3;
+
+            let _hasil = document.getElementById("hasil_koncol");
+            _hasil.innerHTML = penjumlahan;
+        }
+    </script>
+</head>
+<body>
+    <h1>Menghitung Jumlah Dua Bilangan
+    </h1>
+    <table>
+        <tr>
+            <td>
+                <input type="number" id="bil1" onchange="kalkulator()">
+            </td>
+            <tr>
+            <td>
+                +
+            </td>
+            <tr>
+            <td>
+                <input type="number" id="bil2" onchange="kalkulator()">
+            </td></tr>
+            <td>
+                =
+            </td>
+            <tr>
+            <td id="hasil_koncol">
+            </td></tr>
+        </tr>
+    </table>
+</body>
